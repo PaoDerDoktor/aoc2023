@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 def day4_part2_main() -> int:
     with open("day 04/inputs.txt", 'r') as inFile:
         cards: dict[int, tuple[set[int], list[int]]] = {int(line.split(': ')[0].split()[1]) : ({int(n) for n in line.split(': ')[1].split(" | ")[0].split()}, [int(n) for n in line.strip().split(': ')[1].split(" | ")[1].split()]) for line in inFile.readlines()}
